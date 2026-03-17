@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.btl10_4.HelloController" stylesheets="@ex4.css" styleClass="view">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="140.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="96.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField prefHeight="35.0" prefWidth="106.0" fx:id="txtFirst" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField prefHeight="35.0" prefWidth="106.0" fx:id="txtSecond" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField prefHeight="35.0" prefWidth="106.0" fx:id="txtResult" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label prefHeight="17.0" prefWidth="138.0" text="Nhập số thứ nhất">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="115.0" GridPane.rowIndex="2">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="17.0" prefWidth="125.0" text="Nhập số thứ hai" GridPane.rowIndex="1">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#onResultClick" styleClass="btn-result" text="Kết quả" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="33.0" right="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </Button>
+   </children>
+</GridPane>
